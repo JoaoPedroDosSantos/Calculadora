@@ -2,28 +2,98 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
-
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/calcular.js"></script>
+  
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
-  </script>
+ 
 </head>
 <body>
-  This is a template for Onsen UI app.
+    <div class="container"><br><br>
+            <div class="jumbotron calc">
+            <div class="row">
+              <div class="form-group">
+              <div class="col-md-12">
+                <input type="text" name="" value="" class=" form-control inp" id="resultado" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="row"><br><br>
+            <div class="col-xs-2">
+                <button type="button" name="button" class="btn btn-block botao" id="btn7"> 7 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn8"> 8 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn9"> 9 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnMult"> * </button>   
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-lg botao" id="btnPot"> ^ </button>   
+            </div>
+          </div>
+
+          <div class="row"><br><br>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn4"> 4 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn5"> 5 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn6"> 6 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnSub"> - </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnPor"> % </button>
+            </div>
+          </div>
+
+          <div class="row"><br><br>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn1"> 1 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn2"> 2 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn3"> 3 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnDiv"> / </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnRaiz"> √ </button>
+            </div>
+          </div>
+
+          <div class="row"><br><br>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnCE"> CE </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btn0"> 0 </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnDot"> . </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnSomar"> + </button>
+            </div>
+            <div class="col-xs-2">
+              <button type="button" name="button" class="btn btn-block botao" id="btnIgual"> = </button>
+            </div>
+          </div>
 </body>
 </html>
