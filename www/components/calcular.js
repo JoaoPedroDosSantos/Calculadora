@@ -70,14 +70,12 @@ var v1, v2, op;
  }
   });
   $("input[name=raiz]").click(function(){
- if($("#result").val()!=''){
+ ($("#result").val()!='')
    v1=parseFloat($("#result").val());
    $("#result").val('');
    op="raiz";
    $("#op").text($(this).val());
- }else{
-   alert("Nehum numero inserido");
- }
+ 
   });
   $("input[name=igual").click(function(){
     if($("#result").val()!=''){
@@ -96,6 +94,12 @@ var v1, v2, op;
    }
    else if(op=="por"){
      $("#result").val(v1*v2/100);
+   }
+    else if(op=="pot"){
+     $("#result").val(Math.pow(v1,v2));
+   }
+   else if(op=="raiz"){
+     $("#result").val(Math.sqrt(v2)); 
    }
   
  }else{

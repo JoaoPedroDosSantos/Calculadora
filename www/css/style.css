@@ -7,49 +7,56 @@ body{
 .container{
   position: relative;
   margin: 100 auto;
-  width: 280px;
-  height: auto;
+  width: 366px;
+  height: 640px;
   padding: 10px;
-  background: #fff;
+  background: #000;
   border: 1px solid #d0d0d0;
   box-shadow: 4px 4px 4px #909090;
 }
 .top{
   position: relative;
-  width: 97%;
-  height: 40px;
+  width: 100%;
+  height: 65px;
   padding: 6px;
-  background: #8a55d3;
+  background: gray;
 }
 .body{
   margin-top: 10px;
-  width: 95%;
+  width: 100%;
   height: auto;
   padding: 9px;
-  background: #dedede;
+  background: #000;
 }
 .campo{
   width: 100%;
-  height: 115%;
+  height: 52px;
   border: none;
   opacity: 0.5;
-  color: #800080;
+  color: #2268EB;
   font-size: 20px;
   text-align: right;
 }
 .btn{
   margin-top: 4px;
-  width:42px;
-  height: 30px;
-  background: #ba55d3;
-  color: #fff;
+  width:62px;
+  height: 100px;
+  background: #2268EB;
+  color: #000;
   border: none;
   font-size: 15px;
 }
 #op{
   position: absolute;
   z-index: 999;
-  margin: 5px 5px;
+  font-size: 30px;
+  margin: 15px 5px;
   font-weight: bold;
-  color: #800080;
+  
+}
+.cal{
+  color: #fff;
+}
+.ce{
+  background: #fff;
 }
